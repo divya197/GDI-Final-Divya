@@ -1,0 +1,2305 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 11 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
+              <span class="suite-name border-failed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
+                    <span>testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">72 methods, 11 failed,   61 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC34_CheckOutButton, Yes)">testScenarios(UC34_CheckOutButton, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC17_FaqTermsPrivacyLinks, Yes)">testScenarios(UC17_FaqTermsPrivacyLinks, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC19_Filters, Yes)">testScenarios(UC19_Filters, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC37_AddCreditCard, Yes)">testScenarios(UC37_AddCreditCard, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC40_CheckOutWithGC, Yes)">testScenarios(UC40_CheckOutWithGC, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC39_CheckOutWithoutSavingcreditCard, Yes)">testScenarios(UC39_CheckOutWithoutSavingcreditCard, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC36_ShippingMethod, Yes)">testScenarios(UC36_ShippingMethod, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC64_OfferStartShoppingButton, Yes)">testScenarios(UC64_OfferStartShoppingButton, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC16_GiftCard, Yes)">testScenarios(UC16_GiftCard, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC35_SaveSelectShipping, Yes)">testScenarios(UC35_SaveSelectShipping, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC38_CheckOutWithNewCC, Yes)">testScenarios(UC38_CheckOutWithNewCC, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC08_CreateAccountWithInvalidPassword, Yes)">testScenarios(UC08_CreateAccountWithInvalidPassword, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC65_MyStudioTitle, Yes)">testScenarios(UC65_MyStudioTitle, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC26_SaveToWishList, Yes)">testScenarios(UC26_SaveToWishList, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC18_NavigateToSubCategiries, Yes)">testScenarios(UC18_NavigateToSubCategiries, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC47_OrderHistory, Yes)">testScenarios(UC47_OrderHistory, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC46_MyProfile, Yes)">testScenarios(UC46_MyProfile, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC03_CreateNewAccount, Yes)">testScenarios(UC03_CreateNewAccount, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC55_BirthdayEdit, Yes)">testScenarios(UC55_BirthdayEdit, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC07_LoginWithExistingAccountWrongPwd, Yes)">testScenarios(UC07_LoginWithExistingAccountWrongPwd, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC56_EditAddressButton, Yes)">testScenarios(UC56_EditAddressButton, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC66_StudioInfoHeader, Yes)">testScenarios(UC66_StudioInfoHeader, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC71_BaseBenifits, Yes)">testScenarios(UC71_BaseBenifits, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC73_KeepProductInWishlist, Yes)">testScenarios(UC73_KeepProductInWishlist, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC32_ValidateSummaryIsUpdating, Yes)">testScenarios(UC32_ValidateSummaryIsUpdating, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC54_ChangePasswordLink, Yes)">testScenarios(UC54_ChangePasswordLink, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC21_TextPrice, Yes)">testScenarios(UC21_TextPrice, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC29_BagQuantity, Yes)">testScenarios(UC29_BagQuantity, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC72_VIPBenifits, Yes)">testScenarios(UC72_VIPBenifits, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC44_StoreSelection, Yes)">testScenarios(UC44_StoreSelection, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC45_ValidateBottomButtons, Yes)">testScenarios(UC45_ValidateBottomButtons, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC41_CountrySelection, Yes)">testScenarios(UC41_CountrySelection, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC49_ProfileSetting, Yes)">testScenarios(UC49_ProfileSetting, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC11_WeHandPickedTheseForYou, Yes)">testScenarios(UC11_WeHandPickedTheseForYou, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC04_CompleteProfileBadgeValidation, Yes)">testScenarios(UC04_CompleteProfileBadgeValidation, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC28_Description, Yes)">testScenarios(UC28_Description, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC20_ImageZoom, Yes)">testScenarios(UC20_ImageZoom, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC69_SeeRewardsLink, Yes)">testScenarios(UC69_SeeRewardsLink, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC50_ValidateTagScanButton, Yes)">testScenarios(UC50_ValidateTagScanButton, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC10_EmptyBagMessage, Yes)">testScenarios(UC10_EmptyBagMessage, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC51_GetFirstName, Yes)">testScenarios(UC51_GetFirstName, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC23_SizeSelection, Yes)">testScenarios(UC23_SizeSelection, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC48_CustomerId, Yes)">testScenarios(UC48_CustomerId, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC52_GetLastName, Yes)">testScenarios(UC52_GetLastName, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC59_LanguagePreferences, Yes)">testScenarios(UC59_LanguagePreferences, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC67_LocalizationHeader, Yes)">testScenarios(UC67_LocalizationHeader, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC70_RewardsAndBenifitsTitle, Yes)">testScenarios(UC70_RewardsAndBenifitsTitle, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC63_OfferSorryMessage, Yes)">testScenarios(UC63_OfferSorryMessage, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC25_AddToBag, Yes)">testScenarios(UC25_AddToBag, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC13_EmptyWishlistMessage, Yes)">testScenarios(UC13_EmptyWishlistMessage, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC02_SkipThistep, Yes)">testScenarios(UC02_SkipThistep, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC42_ProvinceSelection, Yes)">testScenarios(UC42_ProvinceSelection, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC01_BannerLogoTermsConditions, Yes)">testScenarios(UC01_BannerLogoTermsConditions, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC57_RemoveAddressButton, Yes)">testScenarios(UC57_RemoveAddressButton, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC53_GetPhoneNumber, Yes)">testScenarios(UC53_GetPhoneNumber, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC74_AddProductToBagFromWishlist, Yes)">testScenarios(UC74_AddProductToBagFromWishlist, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC06_LogoutLoginBackValidateProfile, Yes)">testScenarios(UC06_LogoutLoginBackValidateProfile, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC09_Login, Yes)">testScenarios(UC09_Login, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC05_ValidateNotifications, Yes)">testScenarios(UC05_ValidateNotifications, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC30_EditQuantity, Yes)">testScenarios(UC30_EditQuantity, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC75_RemoveProductFromCart, Yes)">testScenarios(UC75_RemoveProductFromCart, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC68_SlideBetweenBadges, Yes)">testScenarios(UC68_SlideBetweenBadges, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC12_VerifyElementsOnHomePage, Yes)">testScenarios(UC12_VerifyElementsOnHomePage, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC60_UpdateProfileButton, Yes)">testScenarios(UC60_UpdateProfileButton, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC33_ApplyProfileCoupon, Yes)">testScenarios(UC33_ApplyProfileCoupon, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC24_ValidateSizeChart, Yes)">testScenarios(UC24_ValidateSizeChart, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC14_CarousalLinks, Yes)">testScenarios(UC14_CarousalLinks, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC27_FindInStore, Yes)">testScenarios(UC27_FindInStore, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC15_Categories, No)">testScenarios(UC15_Categories, No)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC58_AddNewAddress, Yes)">testScenarios(UC58_AddNewAddress, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC22_SendShare, Yes)">testScenarios(UC22_SendShare, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.gdi.testexecutor.TestExecutor" hash-for-method="testScenarios(UC43_CitySelection, Yes)">testScenarios(UC43_CitySelection, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.gdi.testexecutor.TestExecutor</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC34_CheckOutButton, Yes)">
+                  </a> <!-- testScenarios(UC34_CheckOutButton, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC34_CheckOutButton, Yes)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 85 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;DivyaT.local&apos;, ip: &apos;192.168.3.171&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/Users/testuser/Downloads/app-v141-garage-ca-internal_qa.apk, platformVersion=7.1.2, automationName=uiautomator2, platformName=Android, deviceName=Redmi, platform=ANY, systemPort=1314}]
+Session ID: 4ad49834-aeb0-4e40-936a-fe1681c35c32
+*** Element info: {Using=accessibility id, value=cart_checkout}
+	at sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:587)
+	at com.gdi.locators.CartLocators.checkOutButton(CartLocators.java:62)
+	at com.gdi.testscenarios.UC34_CheckOutButton.checkOutButton(UC34_CheckOutButton.java:23)
+	at com.gdi.testscenarios.UC34_CheckOutButton.&lt;init&gt;(UC34_CheckOutButton.java:17)
+	at com.gdi.testscenarios.TestScenarioMapper.executeFunction(TestScenarioMapper.java:141)
+	at com.gdi.testexecutor.TestExecutor.testScenarios(TestExecutor.java:129)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC17_FaqTermsPrivacyLinks, Yes)">
+                  </a> <!-- testScenarios(UC17_FaqTermsPrivacyLinks, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC17_FaqTermsPrivacyLinks, Yes)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 93 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;DivyaT.local&apos;, ip: &apos;192.168.3.171&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/Users/testuser/Downloads/app-v141-garage-ca-internal_qa.apk, platformVersion=7.1.2, automationName=uiautomator2, platformName=Android, deviceName=Redmi, platform=ANY, systemPort=1314}]
+Session ID: 4ad49834-aeb0-4e40-936a-fe1681c35c32
+*** Element info: {Using=accessibility id, value=faq}
+	at sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:587)
+	at com.gdi.locators.HomePageLocators.faq(HomePageLocators.java:142)
+	at com.gdi.testscenarios.UC17_FaqTermsPrivacyLinks.faqTermsPrivacyLinks(UC17_FaqTermsPrivacyLinks.java:25)
+	at com.gdi.testscenarios.UC17_FaqTermsPrivacyLinks.&lt;init&gt;(UC17_FaqTermsPrivacyLinks.java:17)
+	at com.gdi.testscenarios.TestScenarioMapper.executeFunction(TestScenarioMapper.java:76)
+	at com.gdi.testexecutor.TestExecutor.testScenarios(TestExecutor.java:129)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC19_Filters, Yes)">
+                  </a> <!-- testScenarios(UC19_Filters, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC19_Filters, Yes)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 115 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;DivyaT.local&apos;, ip: &apos;192.168.3.171&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/Users/testuser/Downloads/app-v141-garage-ca-internal_qa.apk, platformVersion=7.1.2, automationName=uiautomator2, platformName=Android, deviceName=Redmi, platform=ANY, systemPort=1314}]
+Session ID: 4ad49834-aeb0-4e40-936a-fe1681c35c32
+*** Element info: {Using=accessibility id, value=navigationbar_modal_close}
+	at sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:587)
+	at com.gdi.locators.PLPLocators.closeFilterModule(PLPLocators.java:60)
+	at com.gdi.testscenarios.UC19_Filters.filters(UC19_Filters.java:63)
+	at com.gdi.testscenarios.UC19_Filters.&lt;init&gt;(UC19_Filters.java:19)
+	at com.gdi.testscenarios.TestScenarioMapper.executeFunction(TestScenarioMapper.java:84)
+	at com.gdi.testexecutor.TestExecutor.testScenarios(TestExecutor.java:129)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC37_AddCreditCard, Yes)">
+                  </a> <!-- testScenarios(UC37_AddCreditCard, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC37_AddCreditCard, Yes)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.30 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;DivyaT.local&apos;, ip: &apos;192.168.3.171&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/Users/testuser/Downloads/app-v141-garage-ca-internal_qa.apk, platformVersion=7.1.2, automationName=uiautomator2, platformName=Android, deviceName=Redmi, platform=ANY, systemPort=1314}]
+Session ID: 4ad49834-aeb0-4e40-936a-fe1681c35c32
+*** Element info: {Using=accessibility id, value=payment_credit_card}
+	at sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:587)
+	at com.gdi.locators.CartLocators.addCreditCardImage(CartLocators.java:71)
+	at com.gdi.testscenarios.UC37_AddCreditCard.addCreditCard(UC37_AddCreditCard.java:24)
+	at com.gdi.testscenarios.UC37_AddCreditCard.&lt;init&gt;(UC37_AddCreditCard.java:17)
+	at com.gdi.testscenarios.TestScenarioMapper.executeFunction(TestScenarioMapper.java:153)
+	at com.gdi.testexecutor.TestExecutor.testScenarios(TestExecutor.java:129)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC40_CheckOutWithGC, Yes)">
+                  </a> <!-- testScenarios(UC40_CheckOutWithGC, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC40_CheckOutWithGC, Yes)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 78 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;DivyaT.local&apos;, ip: &apos;192.168.3.171&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/Users/testuser/Downloads/app-v141-garage-ca-internal_qa.apk, platformVersion=7.1.2, automationName=uiautomator2, platformName=Android, deviceName=Redmi, platform=ANY, systemPort=1314}]
+Session ID: 4ad49834-aeb0-4e40-936a-fe1681c35c32
+*** Element info: {Using=accessibility id, value=cart_checkout}
+	at sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:587)
+	at com.gdi.locators.CartLocators.placeYourOrderButton(CartLocators.java:90)
+	at com.gdi.testscenarios.UC40_CheckOutWithGC.checkOutWithGC(UC40_CheckOutWithGC.java:23)
+	at com.gdi.testscenarios.UC40_CheckOutWithGC.&lt;init&gt;(UC40_CheckOutWithGC.java:17)
+	at com.gdi.testscenarios.TestScenarioMapper.executeFunction(TestScenarioMapper.java:165)
+	at com.gdi.testexecutor.TestExecutor.testScenarios(TestExecutor.java:129)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC39_CheckOutWithoutSavingcreditCard, Yes)">
+                  </a> <!-- testScenarios(UC39_CheckOutWithoutSavingcreditCard, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC39_CheckOutWithoutSavingcreditCard, Yes)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 69 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;DivyaT.local&apos;, ip: &apos;192.168.3.171&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/Users/testuser/Downloads/app-v141-garage-ca-internal_qa.apk, platformVersion=7.1.2, automationName=uiautomator2, platformName=Android, deviceName=Redmi, platform=ANY, systemPort=1314}]
+Session ID: 4ad49834-aeb0-4e40-936a-fe1681c35c32
+*** Element info: {Using=accessibility id, value=save_credit_card_details}
+	at sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:587)
+	at com.gdi.locators.CartLocators.unCheckSaveCreditCard(CartLocators.java:84)
+	at com.gdi.testscenarios.UC39_CheckOutWithoutSavingcreditCard.checkOutWithoutSavingcreditCard(UC39_CheckOutWithoutSavingcreditCard.java:23)
+	at com.gdi.testscenarios.UC39_CheckOutWithoutSavingcreditCard.&lt;init&gt;(UC39_CheckOutWithoutSavingcreditCard.java:18)
+	at com.gdi.testscenarios.TestScenarioMapper.executeFunction(TestScenarioMapper.java:161)
+	at com.gdi.testexecutor.TestExecutor.testScenarios(TestExecutor.java:129)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC36_ShippingMethod, Yes)">
+                  </a> <!-- testScenarios(UC36_ShippingMethod, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC36_ShippingMethod, Yes)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 60 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;DivyaT.local&apos;, ip: &apos;192.168.3.171&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/Users/testuser/Downloads/app-v141-garage-ca-internal_qa.apk, platformVersion=7.1.2, automationName=uiautomator2, platformName=Android, deviceName=Redmi, platform=ANY, systemPort=1314}]
+Session ID: 4ad49834-aeb0-4e40-936a-fe1681c35c32
+*** Element info: {Using=accessibility id, value=cart_checkout}
+	at sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:587)
+	at com.gdi.locators.CartLocators.selectPayment(CartLocators.java:68)
+	at com.gdi.testscenarios.UC36_ShippingMethod.shippingMethod(UC36_ShippingMethod.java:23)
+	at com.gdi.testscenarios.UC36_ShippingMethod.&lt;init&gt;(UC36_ShippingMethod.java:17)
+	at com.gdi.testscenarios.TestScenarioMapper.executeFunction(TestScenarioMapper.java:149)
+	at com.gdi.testexecutor.TestExecutor.testScenarios(TestExecutor.java:129)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC64_OfferStartShoppingButton, Yes)">
+                  </a> <!-- testScenarios(UC64_OfferStartShoppingButton, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC64_OfferStartShoppingButton, Yes)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 40 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;DivyaT.local&apos;, ip: &apos;192.168.3.171&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/Users/testuser/Downloads/app-v141-garage-ca-internal_qa.apk, platformVersion=7.1.2, automationName=uiautomator2, platformName=Android, deviceName=Redmi, platform=ANY, systemPort=1314}]
+Session ID: 4ad49834-aeb0-4e40-936a-fe1681c35c32
+*** Element info: {Using=accessibility id, value=start_shopping}
+	at sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:587)
+	at com.gdi.locators.OfferPageLocators.startShoppingButton(OfferPageLocators.java:16)
+	at com.gdi.testscenarios.UC64_OfferStartShoppingButton.offerStartShoppingButton(UC64_OfferStartShoppingButton.java:22)
+	at com.gdi.testscenarios.UC64_OfferStartShoppingButton.&lt;init&gt;(UC64_OfferStartShoppingButton.java:17)
+	at com.gdi.testscenarios.TestScenarioMapper.executeFunction(TestScenarioMapper.java:276)
+	at com.gdi.testexecutor.TestExecutor.testScenarios(TestExecutor.java:129)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC16_GiftCard, Yes)">
+                  </a> <!-- testScenarios(UC16_GiftCard, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC16_GiftCard, Yes)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 112 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;DivyaT.local&apos;, ip: &apos;192.168.3.171&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/Users/testuser/Downloads/app-v141-garage-ca-internal_qa.apk, platformVersion=7.1.2, automationName=uiautomator2, platformName=Android, deviceName=Redmi, platform=ANY, systemPort=1314}]
+Session ID: 4ad49834-aeb0-4e40-936a-fe1681c35c32
+*** Element info: {Using=accessibility id, value=GIFT_CARD}
+	at sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:587)
+	at com.gdi.locators.HomePageLocators.giftCard(HomePageLocators.java:132)
+	at com.gdi.testscenarios.UC16_GiftCard.giftCard(UC16_GiftCard.java:38)
+	at com.gdi.testscenarios.UC16_GiftCard.&lt;init&gt;(UC16_GiftCard.java:16)
+	at com.gdi.testscenarios.TestScenarioMapper.executeFunction(TestScenarioMapper.java:72)
+	at com.gdi.testexecutor.TestExecutor.testScenarios(TestExecutor.java:129)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC35_SaveSelectShipping, Yes)">
+                  </a> <!-- testScenarios(UC35_SaveSelectShipping, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC35_SaveSelectShipping, Yes)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 60 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;DivyaT.local&apos;, ip: &apos;192.168.3.171&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/Users/testuser/Downloads/app-v141-garage-ca-internal_qa.apk, platformVersion=7.1.2, automationName=uiautomator2, platformName=Android, deviceName=Redmi, platform=ANY, systemPort=1314}]
+Session ID: 4ad49834-aeb0-4e40-936a-fe1681c35c32
+*** Element info: {Using=accessibility id, value=cart_checkout}
+	at sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:587)
+	at com.gdi.locators.CartLocators.saveSelectShipping(CartLocators.java:65)
+	at com.gdi.testscenarios.UC35_SaveSelectShipping.saveSelectShipping(UC35_SaveSelectShipping.java:23)
+	at com.gdi.testscenarios.UC35_SaveSelectShipping.&lt;init&gt;(UC35_SaveSelectShipping.java:17)
+	at com.gdi.testscenarios.TestScenarioMapper.executeFunction(TestScenarioMapper.java:145)
+	at com.gdi.testexecutor.TestExecutor.testScenarios(TestExecutor.java:129)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC38_CheckOutWithNewCC, Yes)">
+                  </a> <!-- testScenarios(UC38_CheckOutWithNewCC, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC38_CheckOutWithNewCC, Yes)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 103 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;DivyaT.local&apos;, ip: &apos;192.168.3.171&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/Users/testuser/Downloads/app-v141-garage-ca-internal_qa.apk, platformVersion=7.1.2, automationName=uiautomator2, platformName=Android, deviceName=Redmi, platform=ANY, systemPort=1314}]
+Session ID: 4ad49834-aeb0-4e40-936a-fe1681c35c32
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&apos;Billing Address&apos;]}
+	at sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.gdi.locators.CartLocators.billingAddressStaticText(CartLocators.java:96)
+	at com.gdi.testscenarios.UC38_CheckOutWithNewCC.checkOutWithNewCC(UC38_CheckOutWithNewCC.java:23)
+	at com.gdi.testscenarios.UC38_CheckOutWithNewCC.&lt;init&gt;(UC38_CheckOutWithNewCC.java:17)
+	at com.gdi.testscenarios.TestScenarioMapper.executeFunction(TestScenarioMapper.java:157)
+	at com.gdi.testexecutor.TestExecutor.testScenarios(TestExecutor.java:129)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.gdi.testexecutor.TestExecutor</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC08_CreateAccountWithInvalidPassword, Yes)">
+                  </a> <!-- testScenarios(UC08_CreateAccountWithInvalidPassword, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC08_CreateAccountWithInvalidPassword, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC65_MyStudioTitle, Yes)">
+                  </a> <!-- testScenarios(UC65_MyStudioTitle, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC65_MyStudioTitle, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC26_SaveToWishList, Yes)">
+                  </a> <!-- testScenarios(UC26_SaveToWishList, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC26_SaveToWishList, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC18_NavigateToSubCategiries, Yes)">
+                  </a> <!-- testScenarios(UC18_NavigateToSubCategiries, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC18_NavigateToSubCategiries, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC47_OrderHistory, Yes)">
+                  </a> <!-- testScenarios(UC47_OrderHistory, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC47_OrderHistory, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC46_MyProfile, Yes)">
+                  </a> <!-- testScenarios(UC46_MyProfile, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC46_MyProfile, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC03_CreateNewAccount, Yes)">
+                  </a> <!-- testScenarios(UC03_CreateNewAccount, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC03_CreateNewAccount, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC55_BirthdayEdit, Yes)">
+                  </a> <!-- testScenarios(UC55_BirthdayEdit, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC55_BirthdayEdit, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC07_LoginWithExistingAccountWrongPwd, Yes)">
+                  </a> <!-- testScenarios(UC07_LoginWithExistingAccountWrongPwd, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC07_LoginWithExistingAccountWrongPwd, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC56_EditAddressButton, Yes)">
+                  </a> <!-- testScenarios(UC56_EditAddressButton, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC56_EditAddressButton, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC66_StudioInfoHeader, Yes)">
+                  </a> <!-- testScenarios(UC66_StudioInfoHeader, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC66_StudioInfoHeader, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC71_BaseBenifits, Yes)">
+                  </a> <!-- testScenarios(UC71_BaseBenifits, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC71_BaseBenifits, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC73_KeepProductInWishlist, Yes)">
+                  </a> <!-- testScenarios(UC73_KeepProductInWishlist, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC73_KeepProductInWishlist, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC32_ValidateSummaryIsUpdating, Yes)">
+                  </a> <!-- testScenarios(UC32_ValidateSummaryIsUpdating, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC32_ValidateSummaryIsUpdating, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC54_ChangePasswordLink, Yes)">
+                  </a> <!-- testScenarios(UC54_ChangePasswordLink, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC54_ChangePasswordLink, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC21_TextPrice, Yes)">
+                  </a> <!-- testScenarios(UC21_TextPrice, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC21_TextPrice, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC29_BagQuantity, Yes)">
+                  </a> <!-- testScenarios(UC29_BagQuantity, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC29_BagQuantity, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC72_VIPBenifits, Yes)">
+                  </a> <!-- testScenarios(UC72_VIPBenifits, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC72_VIPBenifits, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC44_StoreSelection, Yes)">
+                  </a> <!-- testScenarios(UC44_StoreSelection, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC44_StoreSelection, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC45_ValidateBottomButtons, Yes)">
+                  </a> <!-- testScenarios(UC45_ValidateBottomButtons, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC45_ValidateBottomButtons, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC41_CountrySelection, Yes)">
+                  </a> <!-- testScenarios(UC41_CountrySelection, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC41_CountrySelection, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC49_ProfileSetting, Yes)">
+                  </a> <!-- testScenarios(UC49_ProfileSetting, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC49_ProfileSetting, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC11_WeHandPickedTheseForYou, Yes)">
+                  </a> <!-- testScenarios(UC11_WeHandPickedTheseForYou, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC11_WeHandPickedTheseForYou, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC04_CompleteProfileBadgeValidation, Yes)">
+                  </a> <!-- testScenarios(UC04_CompleteProfileBadgeValidation, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC04_CompleteProfileBadgeValidation, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC28_Description, Yes)">
+                  </a> <!-- testScenarios(UC28_Description, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC28_Description, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC20_ImageZoom, Yes)">
+                  </a> <!-- testScenarios(UC20_ImageZoom, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC20_ImageZoom, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC69_SeeRewardsLink, Yes)">
+                  </a> <!-- testScenarios(UC69_SeeRewardsLink, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC69_SeeRewardsLink, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC50_ValidateTagScanButton, Yes)">
+                  </a> <!-- testScenarios(UC50_ValidateTagScanButton, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC50_ValidateTagScanButton, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC10_EmptyBagMessage, Yes)">
+                  </a> <!-- testScenarios(UC10_EmptyBagMessage, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC10_EmptyBagMessage, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC51_GetFirstName, Yes)">
+                  </a> <!-- testScenarios(UC51_GetFirstName, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC51_GetFirstName, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC23_SizeSelection, Yes)">
+                  </a> <!-- testScenarios(UC23_SizeSelection, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC23_SizeSelection, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC48_CustomerId, Yes)">
+                  </a> <!-- testScenarios(UC48_CustomerId, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC48_CustomerId, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC52_GetLastName, Yes)">
+                  </a> <!-- testScenarios(UC52_GetLastName, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC52_GetLastName, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC59_LanguagePreferences, Yes)">
+                  </a> <!-- testScenarios(UC59_LanguagePreferences, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC59_LanguagePreferences, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC67_LocalizationHeader, Yes)">
+                  </a> <!-- testScenarios(UC67_LocalizationHeader, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC67_LocalizationHeader, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC70_RewardsAndBenifitsTitle, Yes)">
+                  </a> <!-- testScenarios(UC70_RewardsAndBenifitsTitle, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC70_RewardsAndBenifitsTitle, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC63_OfferSorryMessage, Yes)">
+                  </a> <!-- testScenarios(UC63_OfferSorryMessage, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC63_OfferSorryMessage, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC25_AddToBag, Yes)">
+                  </a> <!-- testScenarios(UC25_AddToBag, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC25_AddToBag, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC13_EmptyWishlistMessage, Yes)">
+                  </a> <!-- testScenarios(UC13_EmptyWishlistMessage, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC13_EmptyWishlistMessage, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC02_SkipThistep, Yes)">
+                  </a> <!-- testScenarios(UC02_SkipThistep, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC02_SkipThistep, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC42_ProvinceSelection, Yes)">
+                  </a> <!-- testScenarios(UC42_ProvinceSelection, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC42_ProvinceSelection, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC01_BannerLogoTermsConditions, Yes)">
+                  </a> <!-- testScenarios(UC01_BannerLogoTermsConditions, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC01_BannerLogoTermsConditions, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC57_RemoveAddressButton, Yes)">
+                  </a> <!-- testScenarios(UC57_RemoveAddressButton, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC57_RemoveAddressButton, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC53_GetPhoneNumber, Yes)">
+                  </a> <!-- testScenarios(UC53_GetPhoneNumber, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC53_GetPhoneNumber, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC74_AddProductToBagFromWishlist, Yes)">
+                  </a> <!-- testScenarios(UC74_AddProductToBagFromWishlist, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC74_AddProductToBagFromWishlist, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC06_LogoutLoginBackValidateProfile, Yes)">
+                  </a> <!-- testScenarios(UC06_LogoutLoginBackValidateProfile, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC06_LogoutLoginBackValidateProfile, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC09_Login, Yes)">
+                  </a> <!-- testScenarios(UC09_Login, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC09_Login, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC05_ValidateNotifications, Yes)">
+                  </a> <!-- testScenarios(UC05_ValidateNotifications, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC05_ValidateNotifications, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC30_EditQuantity, Yes)">
+                  </a> <!-- testScenarios(UC30_EditQuantity, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC30_EditQuantity, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC75_RemoveProductFromCart, Yes)">
+                  </a> <!-- testScenarios(UC75_RemoveProductFromCart, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC75_RemoveProductFromCart, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC68_SlideBetweenBadges, Yes)">
+                  </a> <!-- testScenarios(UC68_SlideBetweenBadges, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC68_SlideBetweenBadges, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC12_VerifyElementsOnHomePage, Yes)">
+                  </a> <!-- testScenarios(UC12_VerifyElementsOnHomePage, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC12_VerifyElementsOnHomePage, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC60_UpdateProfileButton, Yes)">
+                  </a> <!-- testScenarios(UC60_UpdateProfileButton, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC60_UpdateProfileButton, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC33_ApplyProfileCoupon, Yes)">
+                  </a> <!-- testScenarios(UC33_ApplyProfileCoupon, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC33_ApplyProfileCoupon, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC24_ValidateSizeChart, Yes)">
+                  </a> <!-- testScenarios(UC24_ValidateSizeChart, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC24_ValidateSizeChart, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC14_CarousalLinks, Yes)">
+                  </a> <!-- testScenarios(UC14_CarousalLinks, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC14_CarousalLinks, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC27_FindInStore, Yes)">
+                  </a> <!-- testScenarios(UC27_FindInStore, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC27_FindInStore, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC15_Categories, No)">
+                  </a> <!-- testScenarios(UC15_Categories, No) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC15_Categories, No)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC58_AddNewAddress, Yes)">
+                  </a> <!-- testScenarios(UC58_AddNewAddress, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC58_AddNewAddress, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC22_SendShare, Yes)">
+                  </a> <!-- testScenarios(UC22_SendShare, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC22_SendShare, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScenarios(UC43_CitySelection, Yes)">
+                  </a> <!-- testScenarios(UC43_CitySelection, Yes) -->
+                  <span class="method-name">testScenarios</span>
+                  <span class="parameters">(UC43_CitySelection, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/private/var/folders/c1/jfvj3kj52f72v7md_tqpwn240000gp/T/testng-eclipse--168283711/testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.gdi.testexecutor.TestExecutor&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(72);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testScenarios')
+data.setCell(0, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(0, 3, 111887);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testScenarios')
+data.setCell(1, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(1, 3, 86898);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testScenarios')
+data.setCell(2, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(2, 3, 55765);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testScenarios')
+data.setCell(3, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(3, 3, 48545);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testScenarios')
+data.setCell(4, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(4, 3, 45617);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testScenarios')
+data.setCell(5, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(5, 3, 45045);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testScenarios')
+data.setCell(6, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(6, 3, 38888);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testScenarios')
+data.setCell(7, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(7, 3, 38296);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testScenarios')
+data.setCell(8, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(8, 3, 36352);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testScenarios')
+data.setCell(9, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(9, 3, 35411);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testScenarios')
+data.setCell(10, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(10, 3, 34693);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testScenarios')
+data.setCell(11, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(11, 3, 34158);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testScenarios')
+data.setCell(12, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(12, 3, 33305);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testScenarios')
+data.setCell(13, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(13, 3, 31866);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testScenarios')
+data.setCell(14, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(14, 3, 31460);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testScenarios')
+data.setCell(15, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(15, 3, 25263);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testScenarios')
+data.setCell(16, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(16, 3, 24153);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testScenarios')
+data.setCell(17, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(17, 3, 21354);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testScenarios')
+data.setCell(18, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(18, 3, 16910);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testScenarios')
+data.setCell(19, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(19, 3, 14520);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testScenarios')
+data.setCell(20, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(20, 3, 14299);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testScenarios')
+data.setCell(21, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(21, 3, 13423);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testScenarios')
+data.setCell(22, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(22, 3, 13285);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testScenarios')
+data.setCell(23, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(23, 3, 10351);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testScenarios')
+data.setCell(24, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(24, 3, 10289);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'testScenarios')
+data.setCell(25, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(25, 3, 10275);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'testScenarios')
+data.setCell(26, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(26, 3, 8829);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'testScenarios')
+data.setCell(27, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(27, 3, 8659);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'testScenarios')
+data.setCell(28, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(28, 3, 7348);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'testScenarios')
+data.setCell(29, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(29, 3, 7028);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'testScenarios')
+data.setCell(30, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(30, 3, 6764);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'testScenarios')
+data.setCell(31, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(31, 3, 6732);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'testScenarios')
+data.setCell(32, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(32, 3, 6533);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'testScenarios')
+data.setCell(33, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(33, 3, 6135);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'testScenarios')
+data.setCell(34, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(34, 3, 5428);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'testScenarios')
+data.setCell(35, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(35, 3, 5129);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'testScenarios')
+data.setCell(36, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(36, 3, 4698);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'testScenarios')
+data.setCell(37, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(37, 3, 4319);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'testScenarios')
+data.setCell(38, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(38, 3, 4106);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'testScenarios')
+data.setCell(39, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(39, 3, 4044);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'testScenarios')
+data.setCell(40, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(40, 3, 3876);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'testScenarios')
+data.setCell(41, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(41, 3, 3762);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'testScenarios')
+data.setCell(42, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(42, 3, 3631);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'testScenarios')
+data.setCell(43, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(43, 3, 3594);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'testScenarios')
+data.setCell(44, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(44, 3, 3395);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'testScenarios')
+data.setCell(45, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(45, 3, 3212);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'testScenarios')
+data.setCell(46, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(46, 3, 3160);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'testScenarios')
+data.setCell(47, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(47, 3, 3080);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'testScenarios')
+data.setCell(48, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(48, 3, 2689);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'testScenarios')
+data.setCell(49, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(49, 3, 2627);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'testScenarios')
+data.setCell(50, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(50, 3, 2284);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'testScenarios')
+data.setCell(51, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(51, 3, 2159);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'testScenarios')
+data.setCell(52, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(52, 3, 2113);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'testScenarios')
+data.setCell(53, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(53, 3, 2093);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'testScenarios')
+data.setCell(54, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(54, 3, 2075);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'testScenarios')
+data.setCell(55, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(55, 3, 1600);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'testScenarios')
+data.setCell(56, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(56, 3, 1081);
+data.setCell(57, 0, 57)
+data.setCell(57, 1, 'testScenarios')
+data.setCell(57, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(57, 3, 535);
+data.setCell(58, 0, 58)
+data.setCell(58, 1, 'testScenarios')
+data.setCell(58, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(58, 3, 339);
+data.setCell(59, 0, 59)
+data.setCell(59, 1, 'testScenarios')
+data.setCell(59, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(59, 3, 210);
+data.setCell(60, 0, 60)
+data.setCell(60, 1, 'testScenarios')
+data.setCell(60, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(60, 3, 168);
+data.setCell(61, 0, 61)
+data.setCell(61, 1, 'testScenarios')
+data.setCell(61, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(61, 3, 143);
+data.setCell(62, 0, 62)
+data.setCell(62, 1, 'testScenarios')
+data.setCell(62, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(62, 3, 102);
+data.setCell(63, 0, 63)
+data.setCell(63, 1, 'testScenarios')
+data.setCell(63, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(63, 3, 98);
+data.setCell(64, 0, 64)
+data.setCell(64, 1, 'testScenarios')
+data.setCell(64, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(64, 3, 75);
+data.setCell(65, 0, 65)
+data.setCell(65, 1, 'testScenarios')
+data.setCell(65, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(65, 3, 72);
+data.setCell(66, 0, 66)
+data.setCell(66, 1, 'testScenarios')
+data.setCell(66, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(66, 3, 71);
+data.setCell(67, 0, 67)
+data.setCell(67, 1, 'testScenarios')
+data.setCell(67, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(67, 3, 71);
+data.setCell(68, 0, 68)
+data.setCell(68, 1, 'testScenarios')
+data.setCell(68, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(68, 3, 70);
+data.setCell(69, 0, 69)
+data.setCell(69, 1, 'testScenarios')
+data.setCell(69, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(69, 3, 69);
+data.setCell(70, 0, 70)
+data.setCell(70, 1, 'testScenarios')
+data.setCell(70, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(70, 3, 45);
+data.setCell(71, 0, 71)
+data.setCell(71, 1, 'testScenarios')
+data.setCell(71, 2, 'com.gdi.testexecutor.TestExecutor')
+data.setCell(71, 3, 1);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 16 minutes</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.gdi.testexecutor.TestExecutor</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">initFrameWork</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">launchApp</span>
+                <span class="method-start">181 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC01_BannerLogoTermsConditions, Yes)</span>
+                <span class="method-start">43710 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC02_SkipThistep, Yes)</span>
+                <span class="method-start">99477 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC03_CreateNewAccount, Yes)</span>
+                <span class="method-start">112763 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC04_CompleteProfileBadgeValidation, Yes)</span>
+                <span class="method-start">199662 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC05_ValidateNotifications, Yes)</span>
+                <span class="method-start">238551 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC06_LogoutLoginBackValidateProfile, Yes)</span>
+                <span class="method-start">252851 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC07_LoginWithExistingAccountWrongPwd, Yes)</span>
+                <span class="method-start">364739 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC08_CreateAccountWithInvalidPassword, Yes)</span>
+                <span class="method-start">410358 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC09_Login, Yes)</span>
+                <span class="method-start">445052 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC10_EmptyBagMessage, Yes)</span>
+                <span class="method-start">478358 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC11_WeHandPickedTheseForYou, Yes)</span>
+                <span class="method-start">510225 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC12_VerifyElementsOnHomePage, Yes)</span>
+                <span class="method-start">510394 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC13_EmptyWishlistMessage, Yes)</span>
+                <span class="method-start">513022 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC14_CarousalLinks, Yes)</span>
+                <span class="method-start">518152 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC15_Categories, No)</span>
+                <span class="method-start">539506 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testScenarios(UC16_GiftCard, Yes)</span>
+                <span class="method-start">539507 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testScenarios(UC17_FaqTermsPrivacyLinks, Yes)</span>
+                <span class="method-start">545773 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC18_NavigateToSubCategiries, Yes)</span>
+                <span class="method-start">548463 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testScenarios(UC19_Filters, Yes)</span>
+                <span class="method-start">582622 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC20_ImageZoom, Yes)</span>
+                <span class="method-start">627669 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC21_TextPrice, Yes)</span>
+                <span class="method-start">642190 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC22_SendShare, Yes)</span>
+                <span class="method-start">642402 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC23_SizeSelection, Yes)</span>
+                <span class="method-start">642505 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC24_ValidateSizeChart, Yes)</span>
+                <span class="method-start">649534 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC25_AddToBag, Yes)</span>
+                <span class="method-start">662958 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC26_SaveToWishList, Yes)</span>
+                <span class="method-start">668387 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC27_FindInStore, Yes)</span>
+                <span class="method-start">678739 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC28_Description, Yes)</span>
+                <span class="method-start">678838 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC29_BagQuantity, Yes)</span>
+                <span class="method-start">682715 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC30_EditQuantity, Yes)</span>
+                <span class="method-start">692990 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC32_ValidateSummaryIsUpdating, Yes)</span>
+                <span class="method-start">701650 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC33_ApplyProfileCoupon, Yes)</span>
+                <span class="method-start">701794 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testScenarios(UC34_CheckOutButton, Yes)</span>
+                <span class="method-start">705389 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testScenarios(UC35_SaveSelectShipping, Yes)</span>
+                <span class="method-start">707484 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testScenarios(UC36_ShippingMethod, Yes)</span>
+                <span class="method-start">743838 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testScenarios(UC37_AddCreditCard, Yes)</span>
+                <span class="method-start">782136 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testScenarios(UC38_CheckOutWithNewCC, Yes)</span>
+                <span class="method-start">817550 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testScenarios(UC39_CheckOutWithoutSavingcreditCard, Yes)</span>
+                <span class="method-start">819665 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testScenarios(UC40_CheckOutWithGC, Yes)</span>
+                <span class="method-start">819737 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC41_CountrySelection, Yes)</span>
+                <span class="method-start">820819 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC42_ProvinceSelection, Yes)</span>
+                <span class="method-start">869365 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC43_CitySelection, Yes)</span>
+                <span class="method-start">871650 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC44_StoreSelection, Yes)</span>
+                <span class="method-start">875756 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC45_ValidateBottomButtons, Yes)</span>
+                <span class="method-start">883104 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC46_MyProfile, Yes)</span>
+                <span class="method-start">883639 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC47_OrderHistory, Yes)</span>
+                <span class="method-start">893929 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC48_CustomerId, Yes)</span>
+                <span class="method-start">894000 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC49_ProfileSetting, Yes)</span>
+                <span class="method-start">894070 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC50_ValidateTagScanButton, Yes)</span>
+                <span class="method-start">896145 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC51_GetFirstName, Yes)</span>
+                <span class="method-start">897746 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC52_GetLastName, Yes)</span>
+                <span class="method-start">904478 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC53_GetPhoneNumber, Yes)</span>
+                <span class="method-start">904551 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC54_ChangePasswordLink, Yes)</span>
+                <span class="method-start">904626 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC55_BirthdayEdit, Yes)</span>
+                <span class="method-start">904697 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC56_EditAddressButton, Yes)</span>
+                <span class="method-start">908742 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC57_RemoveAddressButton, Yes)</span>
+                <span class="method-start">915508 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC58_AddNewAddress, Yes)</span>
+                <span class="method-start">919828 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC59_LanguagePreferences, Yes)</span>
+                <span class="method-start">928658 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC60_UpdateProfileButton, Yes)</span>
+                <span class="method-start">933357 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC63_OfferSorryMessage, Yes)</span>
+                <span class="method-start">939891 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testScenarios(UC64_OfferStartShoppingButton, Yes)</span>
+                <span class="method-start">971351 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC65_MyStudioTitle, Yes)</span>
+                <span class="method-start">971398 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC66_StudioInfoHeader, Yes)</span>
+                <span class="method-start">974794 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC67_LocalizationHeader, Yes)</span>
+                <span class="method-start">978557 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC68_SlideBetweenBadges, Yes)</span>
+                <span class="method-start">978896 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC69_SeeRewardsLink, Yes)</span>
+                <span class="method-start">1004160 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC70_RewardsAndBenifitsTitle, Yes)</span>
+                <span class="method-start">1007792 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC71_BaseBenifits, Yes)</span>
+                <span class="method-start">1009952 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC72_VIPBenifits, Yes)</span>
+                <span class="method-start">1013033 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC73_KeepProductInWishlist, Yes)</span>
+                <span class="method-start">1016193 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC74_AddProductToBagFromWishlist, Yes)</span>
+                <span class="method-start">1033104 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScenarios(UC75_RemoveProductFromCart, Yes)</span>
+                <span class="method-start">1036317 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-suite after">
+                <span class="method-name">endFrameWork</span>
+                <span class="method-start">1060547 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

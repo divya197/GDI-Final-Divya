@@ -1,0 +1,1476 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>61/11/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jan 15 09:43:59 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>1060 seconds (1060300 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC16_GiftCard, Yes</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 112 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;DivyaT.local&apos;, ip: &apos;192.168.3.171&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/Users/testuser/Downloads/app-v141-garage-ca-internal_qa.apk, platformVersion=7.1.2, automationName=uiautomator2, platformName=Android, deviceName=Redmi, platform=ANY, systemPort=1314}]
+Session ID: 4ad49834-aeb0-4e40-936a-fe1681c35c32
+*** Element info: {Using=accessibility id, value=GIFT_CARD}
+	at sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:587)
+	at com.gdi.locators.HomePageLocators.giftCard(HomePageLocators.java:132)
+	at com.gdi.testscenarios.UC16_GiftCard.giftCard(UC16_GiftCard.java:38)
+	at com.gdi.testscenarios.UC16_GiftCard.&lt;init&gt;(UC16_GiftCard.java:16)
+	at com.gdi.testscenarios.TestScenarioMapper.executeFunction(TestScenarioMapper.java:72)
+	at com.gdi.testexecutor.TestExecutor.testScenarios(TestExecutor.java:129)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1475192960", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1475192960'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 112 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;DivyaT.local&apos;, ip: &apos;192.168.3.171&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/Users/testuser/Downloads/app-v141-garage-ca-internal_qa.apk, platformVersion=7.1.2, automationName=uiautomator2, platformName=Android, deviceName=Redmi, platform=ANY, systemPort=1314}]
+Session ID: 4ad49834-aeb0-4e40-936a-fe1681c35c32
+*** Element info: {Using=accessibility id, value=GIFT_CARD}
+	at sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:587)
+	at com.gdi.locators.HomePageLocators.giftCard(HomePageLocators.java:132)
+	at com.gdi.testscenarios.UC16_GiftCard.giftCard(UC16_GiftCard.java:38)
+	at com.gdi.testscenarios.UC16_GiftCard.&lt;init&gt;(UC16_GiftCard.java:16)
+	at com.gdi.testscenarios.TestScenarioMapper.executeFunction(TestScenarioMapper.java:72)
+	at com.gdi.testexecutor.TestExecutor.testScenarios(TestExecutor.java:129)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>6</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC17_FaqTermsPrivacyLinks, Yes</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 93 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;DivyaT.local&apos;, ip: &apos;192.168.3.171&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/Users/testuser/Downloads/app-v141-garage-ca-internal_qa.apk, platformVersion=7.1.2, automationName=uiautomator2, platformName=Android, deviceName=Redmi, platform=ANY, systemPort=1314}]
+Session ID: 4ad49834-aeb0-4e40-936a-fe1681c35c32
+*** Element info: {Using=accessibility id, value=faq}
+	at sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:587)
+	at com.gdi.locators.HomePageLocators.faq(HomePageLocators.java:142)
+	at com.gdi.testscenarios.UC17_FaqTermsPrivacyLinks.faqTermsPrivacyLinks(UC17_FaqTermsPrivacyLinks.java:25)
+	at com.gdi.testscenarios.UC17_FaqTermsPrivacyLinks.&lt;init&gt;(UC17_FaqTermsPrivacyLinks.java:17)
+	at com.gdi.testscenarios.TestScenarioMapper.executeFunction(TestScenarioMapper.java:76)
+	at com.gdi.testexecutor.TestExecutor.testScenarios(TestExecutor.java:129)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div><a href='#' onClick='toggleBox("stack-trace576894497", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace576894497'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 93 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;DivyaT.local&apos;, ip: &apos;192.168.3.171&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/Users/testuser/Downloads/app-v141-garage-ca-internal_qa.apk, platformVersion=7.1.2, automationName=uiautomator2, platformName=Android, deviceName=Redmi, platform=ANY, systemPort=1314}]
+Session ID: 4ad49834-aeb0-4e40-936a-fe1681c35c32
+*** Element info: {Using=accessibility id, value=faq}
+	at sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:587)
+	at com.gdi.locators.HomePageLocators.faq(HomePageLocators.java:142)
+	at com.gdi.testscenarios.UC17_FaqTermsPrivacyLinks.faqTermsPrivacyLinks(UC17_FaqTermsPrivacyLinks.java:25)
+	at com.gdi.testscenarios.UC17_FaqTermsPrivacyLinks.&lt;init&gt;(UC17_FaqTermsPrivacyLinks.java:17)
+	at com.gdi.testscenarios.TestScenarioMapper.executeFunction(TestScenarioMapper.java:76)
+	at com.gdi.testexecutor.TestExecutor.testScenarios(TestExecutor.java:129)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>2</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC19_Filters, Yes</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 115 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;DivyaT.local&apos;, ip: &apos;192.168.3.171&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/Users/testuser/Downloads/app-v141-garage-ca-internal_qa.apk, platformVersion=7.1.2, automationName=uiautomator2, platformName=Android, deviceName=Redmi, platform=ANY, systemPort=1314}]
+Session ID: 4ad49834-aeb0-4e40-936a-fe1681c35c32
+*** Element info: {Using=accessibility id, value=navigationbar_modal_close}
+	at sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:587)
+	at com.gdi.locators.PLPLocators.closeFilterModule(PLPLocators.java:60)
+	at com.gdi.testscenarios.UC19_Filters.filters(UC19_Filters.java:63)
+	at com.gdi.testscenarios.UC19_Filters.&lt;init&gt;(UC19_Filters.java:19)
+	at com.gdi.testscenarios.TestScenarioMapper.executeFunction(TestScenarioMapper.java:84)
+	at com.gdi.testexecutor.TestExecutor.testScenarios(TestExecutor.java:129)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2022689531", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2022689531'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 115 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;DivyaT.local&apos;, ip: &apos;192.168.3.171&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/Users/testuser/Downloads/app-v141-garage-ca-internal_qa.apk, platformVersion=7.1.2, automationName=uiautomator2, platformName=Android, deviceName=Redmi, platform=ANY, systemPort=1314}]
+Session ID: 4ad49834-aeb0-4e40-936a-fe1681c35c32
+*** Element info: {Using=accessibility id, value=navigationbar_modal_close}
+	at sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:587)
+	at com.gdi.locators.PLPLocators.closeFilterModule(PLPLocators.java:60)
+	at com.gdi.testscenarios.UC19_Filters.filters(UC19_Filters.java:63)
+	at com.gdi.testscenarios.UC19_Filters.&lt;init&gt;(UC19_Filters.java:19)
+	at com.gdi.testscenarios.TestScenarioMapper.executeFunction(TestScenarioMapper.java:84)
+	at com.gdi.testexecutor.TestExecutor.testScenarios(TestExecutor.java:129)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>45</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC34_CheckOutButton, Yes</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 85 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;DivyaT.local&apos;, ip: &apos;192.168.3.171&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/Users/testuser/Downloads/app-v141-garage-ca-internal_qa.apk, platformVersion=7.1.2, automationName=uiautomator2, platformName=Android, deviceName=Redmi, platform=ANY, systemPort=1314}]
+Session ID: 4ad49834-aeb0-4e40-936a-fe1681c35c32
+*** Element info: {Using=accessibility id, value=cart_checkout}
+	at sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:587)
+	at com.gdi.locators.CartLocators.checkOutButton(CartLocators.java:62)
+	at com.gdi.testscenarios.UC34_CheckOutButton.checkOutButton(UC34_CheckOutButton.java:23)
+	at com.gdi.testscenarios.UC34_CheckOutButton.&lt;init&gt;(UC34_CheckOutButton.java:17)
+	at com.gdi.testscenarios.TestScenarioMapper.executeFunction(TestScenarioMapper.java:141)
+	at com.gdi.testexecutor.TestExecutor.testScenarios(TestExecutor.java:129)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div><a href='#' onClick='toggleBox("stack-trace192456457", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace192456457'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 85 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;DivyaT.local&apos;, ip: &apos;192.168.3.171&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/Users/testuser/Downloads/app-v141-garage-ca-internal_qa.apk, platformVersion=7.1.2, automationName=uiautomator2, platformName=Android, deviceName=Redmi, platform=ANY, systemPort=1314}]
+Session ID: 4ad49834-aeb0-4e40-936a-fe1681c35c32
+*** Element info: {Using=accessibility id, value=cart_checkout}
+	at sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:587)
+	at com.gdi.locators.CartLocators.checkOutButton(CartLocators.java:62)
+	at com.gdi.testscenarios.UC34_CheckOutButton.checkOutButton(UC34_CheckOutButton.java:23)
+	at com.gdi.testscenarios.UC34_CheckOutButton.&lt;init&gt;(UC34_CheckOutButton.java:17)
+	at com.gdi.testscenarios.TestScenarioMapper.executeFunction(TestScenarioMapper.java:141)
+	at com.gdi.testexecutor.TestExecutor.testScenarios(TestExecutor.java:129)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>2</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC35_SaveSelectShipping, Yes</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 60 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;DivyaT.local&apos;, ip: &apos;192.168.3.171&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/Users/testuser/Downloads/app-v141-garage-ca-internal_qa.apk, platformVersion=7.1.2, automationName=uiautomator2, platformName=Android, deviceName=Redmi, platform=ANY, systemPort=1314}]
+Session ID: 4ad49834-aeb0-4e40-936a-fe1681c35c32
+*** Element info: {Using=accessibility id, value=cart_checkout}
+	at sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:587)
+	at com.gdi.locators.CartLocators.saveSelectShipping(CartLocators.java:65)
+	at com.gdi.testscenarios.UC35_SaveSelectShipping.saveSelectShipping(UC35_SaveSelectShipping.java:23)
+	at com.gdi.testscenarios.UC35_SaveSelectShipping.&lt;init&gt;(UC35_SaveSelectShipping.java:17)
+	at com.gdi.testscenarios.TestScenarioMapper.executeFunction(TestScenarioMapper.java:145)
+	at com.gdi.testexecutor.TestExecutor.testScenarios(TestExecutor.java:129)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div><a href='#' onClick='toggleBox("stack-trace708613859", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace708613859'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 60 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;DivyaT.local&apos;, ip: &apos;192.168.3.171&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/Users/testuser/Downloads/app-v141-garage-ca-internal_qa.apk, platformVersion=7.1.2, automationName=uiautomator2, platformName=Android, deviceName=Redmi, platform=ANY, systemPort=1314}]
+Session ID: 4ad49834-aeb0-4e40-936a-fe1681c35c32
+*** Element info: {Using=accessibility id, value=cart_checkout}
+	at sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:587)
+	at com.gdi.locators.CartLocators.saveSelectShipping(CartLocators.java:65)
+	at com.gdi.testscenarios.UC35_SaveSelectShipping.saveSelectShipping(UC35_SaveSelectShipping.java:23)
+	at com.gdi.testscenarios.UC35_SaveSelectShipping.&lt;init&gt;(UC35_SaveSelectShipping.java:17)
+	at com.gdi.testscenarios.TestScenarioMapper.executeFunction(TestScenarioMapper.java:145)
+	at com.gdi.testexecutor.TestExecutor.testScenarios(TestExecutor.java:129)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>36</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC36_ShippingMethod, Yes</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 60 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;DivyaT.local&apos;, ip: &apos;192.168.3.171&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/Users/testuser/Downloads/app-v141-garage-ca-internal_qa.apk, platformVersion=7.1.2, automationName=uiautomator2, platformName=Android, deviceName=Redmi, platform=ANY, systemPort=1314}]
+Session ID: 4ad49834-aeb0-4e40-936a-fe1681c35c32
+*** Element info: {Using=accessibility id, value=cart_checkout}
+	at sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:587)
+	at com.gdi.locators.CartLocators.selectPayment(CartLocators.java:68)
+	at com.gdi.testscenarios.UC36_ShippingMethod.shippingMethod(UC36_ShippingMethod.java:23)
+	at com.gdi.testscenarios.UC36_ShippingMethod.&lt;init&gt;(UC36_ShippingMethod.java:17)
+	at com.gdi.testscenarios.TestScenarioMapper.executeFunction(TestScenarioMapper.java:149)
+	at com.gdi.testexecutor.TestExecutor.testScenarios(TestExecutor.java:129)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1531200408", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1531200408'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 60 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;DivyaT.local&apos;, ip: &apos;192.168.3.171&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/Users/testuser/Downloads/app-v141-garage-ca-internal_qa.apk, platformVersion=7.1.2, automationName=uiautomator2, platformName=Android, deviceName=Redmi, platform=ANY, systemPort=1314}]
+Session ID: 4ad49834-aeb0-4e40-936a-fe1681c35c32
+*** Element info: {Using=accessibility id, value=cart_checkout}
+	at sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:587)
+	at com.gdi.locators.CartLocators.selectPayment(CartLocators.java:68)
+	at com.gdi.testscenarios.UC36_ShippingMethod.shippingMethod(UC36_ShippingMethod.java:23)
+	at com.gdi.testscenarios.UC36_ShippingMethod.&lt;init&gt;(UC36_ShippingMethod.java:17)
+	at com.gdi.testscenarios.TestScenarioMapper.executeFunction(TestScenarioMapper.java:149)
+	at com.gdi.testexecutor.TestExecutor.testScenarios(TestExecutor.java:129)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>38</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC37_AddCreditCard, Yes</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.30 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;DivyaT.local&apos;, ip: &apos;192.168.3.171&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/Users/testuser/Downloads/app-v141-garage-ca-internal_qa.apk, platformVersion=7.1.2, automationName=uiautomator2, platformName=Android, deviceName=Redmi, platform=ANY, systemPort=1314}]
+Session ID: 4ad49834-aeb0-4e40-936a-fe1681c35c32
+*** Element info: {Using=accessibility id, value=payment_credit_card}
+	at sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:587)
+	at com.gdi.locators.CartLocators.addCreditCardImage(CartLocators.java:71)
+	at com.gdi.testscenarios.UC37_AddCreditCard.addCreditCard(UC37_AddCreditCard.java:24)
+	at com.gdi.testscenarios.UC37_AddCreditCard.&lt;init&gt;(UC37_AddCreditCard.java:17)
+	at com.gdi.testscenarios.TestScenarioMapper.executeFunction(TestScenarioMapper.java:153)
+	at com.gdi.testexecutor.TestExecutor.testScenarios(TestExecutor.java:129)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1123321137", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1123321137'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.30 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;DivyaT.local&apos;, ip: &apos;192.168.3.171&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/Users/testuser/Downloads/app-v141-garage-ca-internal_qa.apk, platformVersion=7.1.2, automationName=uiautomator2, platformName=Android, deviceName=Redmi, platform=ANY, systemPort=1314}]
+Session ID: 4ad49834-aeb0-4e40-936a-fe1681c35c32
+*** Element info: {Using=accessibility id, value=payment_credit_card}
+	at sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:587)
+	at com.gdi.locators.CartLocators.addCreditCardImage(CartLocators.java:71)
+	at com.gdi.testscenarios.UC37_AddCreditCard.addCreditCard(UC37_AddCreditCard.java:24)
+	at com.gdi.testscenarios.UC37_AddCreditCard.&lt;init&gt;(UC37_AddCreditCard.java:17)
+	at com.gdi.testscenarios.TestScenarioMapper.executeFunction(TestScenarioMapper.java:153)
+	at com.gdi.testexecutor.TestExecutor.testScenarios(TestExecutor.java:129)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>35</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC38_CheckOutWithNewCC, Yes</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 103 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;DivyaT.local&apos;, ip: &apos;192.168.3.171&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/Users/testuser/Downloads/app-v141-garage-ca-internal_qa.apk, platformVersion=7.1.2, automationName=uiautomator2, platformName=Android, deviceName=Redmi, platform=ANY, systemPort=1314}]
+Session ID: 4ad49834-aeb0-4e40-936a-fe1681c35c32
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&apos;Billing Address&apos;]}
+	at sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.gdi.locators.CartLocators.billingAddressStaticText(CartLocators.java:96)
+	at com.gdi.testscenarios.UC38_CheckOutWithNewCC.checkOutWithNewCC(UC38_CheckOutWithNewCC.java:23)
+	at com.gdi.testscenarios.UC38_CheckOutWithNewCC.&lt;init&gt;(UC38_CheckOutWithNewCC.java:17)
+	at com.gdi.testscenarios.TestScenarioMapper.executeFunction(TestScenarioMapper.java:157)
+	at com.gdi.testexecutor.TestExecutor.testScenarios(TestExecutor.java:129)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2032909428", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2032909428'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 103 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;DivyaT.local&apos;, ip: &apos;192.168.3.171&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/Users/testuser/Downloads/app-v141-garage-ca-internal_qa.apk, platformVersion=7.1.2, automationName=uiautomator2, platformName=Android, deviceName=Redmi, platform=ANY, systemPort=1314}]
+Session ID: 4ad49834-aeb0-4e40-936a-fe1681c35c32
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&apos;Billing Address&apos;]}
+	at sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.gdi.locators.CartLocators.billingAddressStaticText(CartLocators.java:96)
+	at com.gdi.testscenarios.UC38_CheckOutWithNewCC.checkOutWithNewCC(UC38_CheckOutWithNewCC.java:23)
+	at com.gdi.testscenarios.UC38_CheckOutWithNewCC.&lt;init&gt;(UC38_CheckOutWithNewCC.java:17)
+	at com.gdi.testscenarios.TestScenarioMapper.executeFunction(TestScenarioMapper.java:157)
+	at com.gdi.testexecutor.TestExecutor.testScenarios(TestExecutor.java:129)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>2</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC39_CheckOutWithoutSavingcreditCard, Yes</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 69 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;DivyaT.local&apos;, ip: &apos;192.168.3.171&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/Users/testuser/Downloads/app-v141-garage-ca-internal_qa.apk, platformVersion=7.1.2, automationName=uiautomator2, platformName=Android, deviceName=Redmi, platform=ANY, systemPort=1314}]
+Session ID: 4ad49834-aeb0-4e40-936a-fe1681c35c32
+*** Element info: {Using=accessibility id, value=save_credit_card_details}
+	at sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:587)
+	at com.gdi.locators.CartLocators.unCheckSaveCreditCard(CartLocators.java:84)
+	at com.gdi.testscenarios.UC39_CheckOutWithoutSavingcreditCard.checkOutWithoutSavingcreditCard(UC39_CheckOutWithoutSavingcreditCard.java:23)
+	at com.gdi.testscenarios.UC39_CheckOutWithoutSavingcreditCard.&lt;init&gt;(UC39_CheckOutWithoutSavingcreditCard.java:18)
+	at com.gdi.testscenarios.TestScenarioMapper.executeFunction(TestScenarioMapper.java:161)
+	at com.gdi.testexecutor.TestExecutor.testScenarios(TestExecutor.java:129)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div><a href='#' onClick='toggleBox("stack-trace523211332", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace523211332'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 69 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;DivyaT.local&apos;, ip: &apos;192.168.3.171&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/Users/testuser/Downloads/app-v141-garage-ca-internal_qa.apk, platformVersion=7.1.2, automationName=uiautomator2, platformName=Android, deviceName=Redmi, platform=ANY, systemPort=1314}]
+Session ID: 4ad49834-aeb0-4e40-936a-fe1681c35c32
+*** Element info: {Using=accessibility id, value=save_credit_card_details}
+	at sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:587)
+	at com.gdi.locators.CartLocators.unCheckSaveCreditCard(CartLocators.java:84)
+	at com.gdi.testscenarios.UC39_CheckOutWithoutSavingcreditCard.checkOutWithoutSavingcreditCard(UC39_CheckOutWithoutSavingcreditCard.java:23)
+	at com.gdi.testscenarios.UC39_CheckOutWithoutSavingcreditCard.&lt;init&gt;(UC39_CheckOutWithoutSavingcreditCard.java:18)
+	at com.gdi.testscenarios.TestScenarioMapper.executeFunction(TestScenarioMapper.java:161)
+	at com.gdi.testexecutor.TestExecutor.testScenarios(TestExecutor.java:129)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>0</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC40_CheckOutWithGC, Yes</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 78 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;DivyaT.local&apos;, ip: &apos;192.168.3.171&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/Users/testuser/Downloads/app-v141-garage-ca-internal_qa.apk, platformVersion=7.1.2, automationName=uiautomator2, platformName=Android, deviceName=Redmi, platform=ANY, systemPort=1314}]
+Session ID: 4ad49834-aeb0-4e40-936a-fe1681c35c32
+*** Element info: {Using=accessibility id, value=cart_checkout}
+	at sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:587)
+	at com.gdi.locators.CartLocators.placeYourOrderButton(CartLocators.java:90)
+	at com.gdi.testscenarios.UC40_CheckOutWithGC.checkOutWithGC(UC40_CheckOutWithGC.java:23)
+	at com.gdi.testscenarios.UC40_CheckOutWithGC.&lt;init&gt;(UC40_CheckOutWithGC.java:17)
+	at com.gdi.testscenarios.TestScenarioMapper.executeFunction(TestScenarioMapper.java:165)
+	at com.gdi.testexecutor.TestExecutor.testScenarios(TestExecutor.java:129)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1747053097", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1747053097'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 78 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;DivyaT.local&apos;, ip: &apos;192.168.3.171&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/Users/testuser/Downloads/app-v141-garage-ca-internal_qa.apk, platformVersion=7.1.2, automationName=uiautomator2, platformName=Android, deviceName=Redmi, platform=ANY, systemPort=1314}]
+Session ID: 4ad49834-aeb0-4e40-936a-fe1681c35c32
+*** Element info: {Using=accessibility id, value=cart_checkout}
+	at sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:587)
+	at com.gdi.locators.CartLocators.placeYourOrderButton(CartLocators.java:90)
+	at com.gdi.testscenarios.UC40_CheckOutWithGC.checkOutWithGC(UC40_CheckOutWithGC.java:23)
+	at com.gdi.testscenarios.UC40_CheckOutWithGC.&lt;init&gt;(UC40_CheckOutWithGC.java:17)
+	at com.gdi.testscenarios.TestScenarioMapper.executeFunction(TestScenarioMapper.java:165)
+	at com.gdi.testexecutor.TestExecutor.testScenarios(TestExecutor.java:129)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>1</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC64_OfferStartShoppingButton, Yes</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 40 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;DivyaT.local&apos;, ip: &apos;192.168.3.171&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/Users/testuser/Downloads/app-v141-garage-ca-internal_qa.apk, platformVersion=7.1.2, automationName=uiautomator2, platformName=Android, deviceName=Redmi, platform=ANY, systemPort=1314}]
+Session ID: 4ad49834-aeb0-4e40-936a-fe1681c35c32
+*** Element info: {Using=accessibility id, value=start_shopping}
+	at sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:587)
+	at com.gdi.locators.OfferPageLocators.startShoppingButton(OfferPageLocators.java:16)
+	at com.gdi.testscenarios.UC64_OfferStartShoppingButton.offerStartShoppingButton(UC64_OfferStartShoppingButton.java:22)
+	at com.gdi.testscenarios.UC64_OfferStartShoppingButton.&lt;init&gt;(UC64_OfferStartShoppingButton.java:17)
+	at com.gdi.testscenarios.TestScenarioMapper.executeFunction(TestScenarioMapper.java:276)
+	at com.gdi.testexecutor.TestExecutor.testScenarios(TestExecutor.java:129)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1978209605", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1978209605'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 40 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;DivyaT.local&apos;, ip: &apos;192.168.3.171&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/Users/testuser/Downloads/app-v141-garage-ca-internal_qa.apk, platformVersion=7.1.2, automationName=uiautomator2, platformName=Android, deviceName=Redmi, platform=ANY, systemPort=1314}]
+Session ID: 4ad49834-aeb0-4e40-936a-fe1681c35c32
+*** Element info: {Using=accessibility id, value=start_shopping}
+	at sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.AppiumDriver.findElementByAccessibilityId(AppiumDriver.java:587)
+	at com.gdi.locators.OfferPageLocators.startShoppingButton(OfferPageLocators.java:16)
+	at com.gdi.testscenarios.UC64_OfferStartShoppingButton.offerStartShoppingButton(UC64_OfferStartShoppingButton.java:22)
+	at com.gdi.testscenarios.UC64_OfferStartShoppingButton.&lt;init&gt;(UC64_OfferStartShoppingButton.java:17)
+	at com.gdi.testscenarios.TestScenarioMapper.executeFunction(TestScenarioMapper.java:276)
+	at com.gdi.testexecutor.TestExecutor.testScenarios(TestExecutor.java:129)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>0</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC01_BannerLogoTermsConditions, Yes</td>
+<td></td>
+<td>55</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC02_SkipThistep, Yes</td>
+<td></td>
+<td>13</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC03_CreateNewAccount, Yes</td>
+<td></td>
+<td>86</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC04_CompleteProfileBadgeValidation, Yes</td>
+<td></td>
+<td>38</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC05_ValidateNotifications, Yes</td>
+<td></td>
+<td>14</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC06_LogoutLoginBackValidateProfile, Yes</td>
+<td></td>
+<td>111</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC07_LoginWithExistingAccountWrongPwd, Yes</td>
+<td></td>
+<td>45</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC08_CreateAccountWithInvalidPassword, Yes</td>
+<td></td>
+<td>34</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC09_Login, Yes</td>
+<td></td>
+<td>33</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC10_EmptyBagMessage, Yes</td>
+<td></td>
+<td>31</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC11_WeHandPickedTheseForYou, Yes</td>
+<td></td>
+<td>0</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC12_VerifyElementsOnHomePage, Yes</td>
+<td></td>
+<td>2</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC13_EmptyWishlistMessage, Yes</td>
+<td></td>
+<td>5</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC14_CarousalLinks, Yes</td>
+<td></td>
+<td>21</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC15_Categories, No</td>
+<td></td>
+<td>0</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC18_NavigateToSubCategiries, Yes</td>
+<td></td>
+<td>34</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC20_ImageZoom, Yes</td>
+<td></td>
+<td>14</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC21_TextPrice, Yes</td>
+<td></td>
+<td>0</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC22_SendShare, Yes</td>
+<td></td>
+<td>0</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC23_SizeSelection, Yes</td>
+<td></td>
+<td>7</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC24_ValidateSizeChart, Yes</td>
+<td></td>
+<td>13</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC25_AddToBag, Yes</td>
+<td></td>
+<td>5</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC26_SaveToWishList, Yes</td>
+<td></td>
+<td>10</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC27_FindInStore, Yes</td>
+<td></td>
+<td>0</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC28_Description, Yes</td>
+<td></td>
+<td>3</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC29_BagQuantity, Yes</td>
+<td></td>
+<td>10</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC30_EditQuantity, Yes</td>
+<td></td>
+<td>8</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC32_ValidateSummaryIsUpdating, Yes</td>
+<td></td>
+<td>0</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC33_ApplyProfileCoupon, Yes</td>
+<td></td>
+<td>3</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC41_CountrySelection, Yes</td>
+<td></td>
+<td>48</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC42_ProvinceSelection, Yes</td>
+<td></td>
+<td>2</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC43_CitySelection, Yes</td>
+<td></td>
+<td>4</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC44_StoreSelection, Yes</td>
+<td></td>
+<td>7</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC45_ValidateBottomButtons, Yes</td>
+<td></td>
+<td>0</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC46_MyProfile, Yes</td>
+<td></td>
+<td>10</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC47_OrderHistory, Yes</td>
+<td></td>
+<td>0</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC48_CustomerId, Yes</td>
+<td></td>
+<td>0</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC49_ProfileSetting, Yes</td>
+<td></td>
+<td>2</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC50_ValidateTagScanButton, Yes</td>
+<td></td>
+<td>1</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC51_GetFirstName, Yes</td>
+<td></td>
+<td>6</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC52_GetLastName, Yes</td>
+<td></td>
+<td>0</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC53_GetPhoneNumber, Yes</td>
+<td></td>
+<td>0</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC54_ChangePasswordLink, Yes</td>
+<td></td>
+<td>0</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC55_BirthdayEdit, Yes</td>
+<td></td>
+<td>4</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC56_EditAddressButton, Yes</td>
+<td></td>
+<td>6</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC57_RemoveAddressButton, Yes</td>
+<td></td>
+<td>4</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC58_AddNewAddress, Yes</td>
+<td></td>
+<td>8</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC59_LanguagePreferences, Yes</td>
+<td></td>
+<td>4</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC60_UpdateProfileButton, Yes</td>
+<td></td>
+<td>6</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC63_OfferSorryMessage, Yes</td>
+<td></td>
+<td>31</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC65_MyStudioTitle, Yes</td>
+<td></td>
+<td>3</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC66_StudioInfoHeader, Yes</td>
+<td></td>
+<td>3</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC67_LocalizationHeader, Yes</td>
+<td></td>
+<td>0</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC68_SlideBetweenBadges, Yes</td>
+<td></td>
+<td>25</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC69_SeeRewardsLink, Yes</td>
+<td></td>
+<td>3</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC70_RewardsAndBenifitsTitle, Yes</td>
+<td></td>
+<td>2</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC71_BaseBenifits, Yes</td>
+<td></td>
+<td>3</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC72_VIPBenifits, Yes</td>
+<td></td>
+<td>3</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC73_KeepProductInWishlist, Yes</td>
+<td></td>
+<td>16</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC74_AddProductToBagFromWishlist, Yes</td>
+<td></td>
+<td>3</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+<tr>
+<td title='com.gdi.testexecutor.TestExecutor.testScenarios()'><b>testScenarios</b><br>Test class: com.gdi.testexecutor.TestExecutor<br>Parameters: UC75_RemoveProductFromCart, Yes</td>
+<td></td>
+<td>24</td>
+<td>com.gdi.testexecutor.TestExecutor@18be83e4</td></tr>
+</table><p>
+</body>
+</html>
